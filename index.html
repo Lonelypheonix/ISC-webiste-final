@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>ISC</title>
+        <script id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflS50iB-/www-widgetapi.js" async=""></script>
+        <script src="https://www.youtube.com/player_api"></script>
+        <link rel="stylesheet preload" as="style" href="css/preload.min.css" />
+        <link rel="stylesheet preload" as="style" href="css/icomoon.css" />
+        <link rel="stylesheet preload" as="style" href="css/libs.min.css" />
+        <!-- Font Awesome Icons -->
+   <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+ />
+        <link rel="stylesheet" href="css/index.min.css" />
+        <link rel="stylesheet" href="css/home_style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+    </head>
+    <body>
+        <header class="header" data-page="home">
+            <div class="container d-flex flex-wrap justify-content-between align-items-center">
+                <div class="logo header_logo">
+                    <a class="d-inline-flex align-items-center" href="index.html">
+                            <img src="img/logo.png" alt="ISC" />
+                    </a>
+                </div>
+                <button
+                    class="header_trigger"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#headerMenu"
+                    aria-controls="headerMenu"
+                >
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+                <nav class="header_nav collapse" id="headerMenu">
+                    <ul class="header_nav-list">
+                        <li class="header_nav-list_item">
+                            <a class="nav-item" href="index.html" data-page="home">Home</a>
+                        </li>
+                
+                        <li class="header_nav-list_item">
+                            <a class="nav-item" href="about.html" data-page="about">About Us</a>
+                        </li>
+                        <li class="header_nav-list_item">
+                            <a class="nav-item" href="gallery.html" data-page="gallery">Gallery</a>
+                        </li>
+                        
+                        <li class="header_nav-list_item">
+                            <a class="nav-item" href="testimonals.html" data-page="testimonals">Testimonals</a>
+                        </li>
+                        <li class="header_nav-list_item">
+                            <a class="nav-item" href="milestones.html" data-page="milestones">Milestones</a>
+                        </li>
+                        
+                        <li class="header_nav-list_item">
+                            <a class="nav-item" href="contacts.html" data-page="contacts">Contact Us</a>
+                        </li>
+                    </ul>
+                    <ul class="promobar_socials d-flex align-items-center justify-content-center">
+                        <li class="promobar_socials-item">
+                            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="icon-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="promobar_socials-item">
+                            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="icon-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="promobar_socials-item">
+                            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="icon-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+            <section class="bannerPg">
+                <div class="slideshow-container" id="banner">
+                  <div class="mySlides fade">
+                    <img src="./img/banner1.png" style="width:100%">
+                  </div>
+                  <div class="mySlides fade">
+                    <img src="./img/banner2.png" style="width:100%">
+                  </div>
+                  <div class="mySlides fade">
+                    <img src="./img/banner3.png" style="width:100%">
+                  </div>
+                </div>
+                <script>
+                  document.addEventListener("DOMContentLoaded", function() {
+                    var slideIndex = 0;
+                    showSlides();
+                
+                    function showSlides() {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                      }
+                      slideIndex++;
+                      if (slideIndex > slides.length) {
+                        slideIndex = 1;
+                      }
+                      slides[slideIndex - 1].style.display = "block";
+                      setTimeout(showSlides, 3000); // Change image every 3 seconds
+                    }
+                  });
+                </script>
+                
+              </section>
+            <section class="hero">
+                <div class="container d-lg-flex align-items-center">
+                    <div class="hero_content">
+                        <h1 class="hero_content-header" data-aos="fade-up">Innovative Study Circle</h1>
+                        <div class="hero_content-rating d-flex flex-column flex-sm-row align-items-center">
+                            <p class="text" data-aos="fade-left">Our course is rated excellent by over 42,000 people</p>
+                            <div class="wrapper" data-aos="fade-left" data-aos-delay="50">
+                                <ul class="rating d-flex align-items-center">
+                                    <li class="rating_star">
+                                        <i class="icon-star icon"></i>
+                                    </li>
+                                    <li class="rating_star">
+                                        <i class="icon-star icon"></i>
+                                    </li>
+                                    <li class="rating_star">
+                                        <i class="icon-star icon"></i>
+                                    </li>
+                                    <li class="rating_star">
+                                        <i class="icon-star icon"></i>
+                                    </li>
+                                    <li class="rating_star">
+                                        <i class="icon-star icon"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="hero_content-text" data-aos="fade-up" data-aos-delay="50">
+                            Today, more than 48,000 people have already studied at our university in various fields: programming,
+                            photography, marketing and management
+                        </p>
+                        <div class="hero_content-action d-flex flex-wrap">
+                            <a class="btn btn--gradient" href="about.html" data-aos="fade-left">
+                                <span class="text">Know About Us</span>
+                            </a>
+                            <a class="btn btn--highlight" href="testimonals.html" data-aos="fade-left" data-aos-delay="50">
+                                <span class="text">Student Reviews</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero_media col-lg-6">
+                        <div class="col-md-6"><img class="img-thumbnail" src="img/image-01.png"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- hero section end -->
+            <!-- features section start -->
+            <div class="features">
+                <div class="container">
+                    <ul class="features_list d-md-flex flex-wrap">
+                        <li class="features_list-item col-md-4" data-order="1" data-aos="fade-up">
+                            <div class="card">
+                                <div class="content">
+                                    <div class="card_media">
+                                        <i class="fa-solid fa-user-group icon"></i>
+                                    </div>
+                                    <div class="card_main">
+                                        <h5 class="card_main-title">Full Time Faculty</h5>
+                                        <p class="card_main-text">
+                                            Sed a eros sodales diam sagittis faucibus. Cras id erat nisl. Lorem tempus rhoncus sit tortor.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="features_list-item col-md-4" data-order="2" data-aos="fade-up">
+                            <div class="card">
+                                <div class="content">
+                                    <div class="card_media">
+                                        <i class="fa-solid fa-folder-tree icon"></i>
+                                    </div>
+                                    <div class="card_main">
+                                        <h5 class="card_main-title">Student Counselling</h5>
+                                        <p class="card_main-text">
+                                            Donec urna massa, cursus venenatis ipsum et, tempus rhoncus tortor. Lorem ipsum dolor.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="features_list-item col-md-4" data-order="3" data-aos="fade-up">
+                            <div class="card">
+                                <div class="content">
+                                    <div class="card_media">
+                                        <i class="fa-solid fa-file-lines icon"></i>
+                                    </div>
+                                    <div class="card_main">
+                                        <h5 class="card_main-title">High Frequency test</h5>
+                                        <p class="card_main-text">
+                                            Sed a eros sodales diam sagittis faucibus. Cras id erat nisl. Lorem ipsum dolor sit lorem amet.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="features_list-item col-md-4" data-order="3" data-aos="fade-up">
+                            <div class="card">
+                                <div class="content">
+                                    <div class="card_media">
+                                        <i class="fa-solid fa-book-open-reader icon"></i>
+                                    </div>
+                                    <div class="card_main">
+                                        <h5 class="card_main-title">Acceble to reference book</h5>
+                                        <p class="card_main-text">
+                                            Sed a eros sodales diam sagittis faucibus. Cras id erat nisl. Lorem ipsum dolor sit lorem amet.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="features_list-item col-md-4" data-order="3" data-aos="fade-up">
+                            <div class="card">
+                                <div class="content">
+                                    <div class="card_media">
+                                        <i class="icon-headset-solid icon"></i>
+                                    </div>
+                                    <div class="card_main">
+                                        <h5 class="card_main-title">Regular Assignment</h5>
+                                        <p class="card_main-text">
+                                            Sed a eros sodales diam sagittis faucibus. Cras id erat nisl. Lorem ipsum dolor sit lorem amet.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="features_list-item col-md-4" data-order="3" data-aos="fade-up">
+                            <div class="card">
+                                <div class="content">
+                                    <div class="card_media">
+                                        <i class="icon-headset-solid icon"></i>
+                                    </div>
+                                    <div class="card_main">
+                                        <h5 class="card_main-title">+1000 of Success Stories</h5>
+                                        <p class="card_main-text">
+                                            Sed a eros sodales diam sagittis faucibus. Cras id erat nisl. Lorem ipsum dolor sit lorem amet.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- features section end -->
+            <!-- promo section start -->
+            <!-- <section class="promo">
+                <div class="container d-flex flex-column-reverse flex-lg-row justify-content-lg-end">
+                    <div class="promo_media">
+                        <lottie-player
+                            src="lottie/scene.json"
+                            background="transparent"
+                            speed="1"
+                            style="width: 100%; height: 100%"
+                            loop
+                            autoplay
+                        ></lottie-player>
+                    </div>
+                    <div class="promo_content">
+                        <h2 class="promo_content-header" data-aos="fade-left">Learn and get a profession online</h2>
+                        <p class="promo_content-text" data-aos="fade-up" data-aos-delay="50">
+                            Morbi tempor eleifend condimentum. Etiam mollis urna et massa tempus vulputate. Nunc sed nisl est. Donec non
+                            consectetur elit. Praesent accumsan elit urna, eget mattis turpis aliquam a. In sagittis bibendum consequat.
+                            Quisque porta volutpat ligula sit amet varius
+                        </p>
+                        <a class="promo_content-btn btn btn--gradient" href="#" data-aos="fade-up" data-aos-delay="100">
+                            <span class="text">Try for Free</span>
+                        </a>
+                    </div>
+                </div>
+            </section> -->
+            <!-- promo section end -->
+                        <!-- popular courses section start -->
+                        <section class="popular">
+                            <div class="container">
+                                <div class="popular_header">
+                                    <h2 class="popular_header-title" data-aos="fade-up">Popular courses</h2>
+                                    <p class="popular_header-text" data-aos="fade-down">
+                                        We have a variety of courses with well experienced Teachers
+                                    </p>
+                                </div>
+                                <ul class="popular_tags courses-tags d-flex flex-wrap align-items-center justify-content-center">
+                                    <li class="list-item" data-aos="fade-left">
+                                        <a class="tag" href="#">8th class</a>
+                                    </li>
+                                    <li class="list-item" data-aos="fade-left" data-aos-delay="50">
+                                        <a class="tag" href="#">9th class</a>
+                                    </li>
+                                    <li class="list-item" data-aos="fade-left" data-aos-delay="100">
+                                        <a class="tag" href="#">10th Class</a>
+                                    </li>
+                                    <li class="list-item" data-aos="fade-left" data-aos-delay="150">
+                                        <a class="tag" href="#">11th Class</a>
+                                    </li>
+                                    <li class="list-item" data-aos="fade-left" data-aos-delay="200">
+                                        <a class="tag" href="#">12th Class</a>
+                                    </li>
+                                    <li class="list-item" data-aos="fade-left" data-aos-delay="250">
+                                        <a class="tag" href="#">8 to 12th Class</a>
+                                    </li>
+                                </ul>
+                                <ul class="popular_list d-md-flex flex-wrap">
+                                    <li class="popular_list-card course-card col-12 col-md-6 col-lg-4" data-aos="fade-up">
+                                        <div class="course-card_wrapper">
+                                            <div class="top d-flex align-items-start">
+                                                <span class="top_icon top_icon--blue">
+                                                    <i class="icon-code-solid icon"></i>
+                                                </span>
+                                                <div class="wrapper d-flex flex-column">
+                                                    <h5 class="top_title">8th Class</h5>
+                                                    <ul class="rating d-flex align-items-center">
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                    </ul>
+                                                    <span class="top_author"></span>
+                                                    <span class="top_details">1 Year Course</span>
+                                                </div>
+                                            </div>
+                                            <div class="bottom">
+                                                <ul class="bottom_list">
+                                                    <li class="bottom_list-item d-flex align-items-start">
+                                                        <i class="bottom_list-item_marker icon-circle"></i>
+                                                        <p class="bottom_list-item_text">
+                                                            STATE
+                                                        </p>
+                                                    </li>
+                                                    <li class="bottom_list-item d-flex align-items-start">
+                                                        <i class="bottom_list-item_marker icon-circle"></i>
+                                                        <p class="bottom_list-item_text">
+                                                            ICSE
+                                                        </p>
+                                                    </li>
+                                                    <li class="bottom_list-item d-flex align-items-start">
+                                                        <i class="bottom_list-item_marker icon-circle"></i>
+                                                        <p class="bottom_list-item_text">
+                                                            CBSE
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                                <a class="bottom_btn btn btn--bordered btn--arrow" href="course.html">
+                                                    Read more<i class="icon-arrow-right-solid icon"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="popular_list-card course-card col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
+                                        <div class="course-card_wrapper">
+                                            <div class="top d-flex align-items-start">
+                                                <span class="top_icon top_icon--orange">
+                                                    <i class="icon-css3 icon"></i>
+                                                </span>
+                                                <div class="wrapper d-flex flex-column">
+                                                    <h5 class="top_title">9th Class</h5>
+                                                    <ul class="rating d-flex align-items-center">
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                    </ul>
+                                                    <span class="top_author"></span>
+                                                    <span class="top_details">1 Year Course</span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="bottom">
+                                                <ul class="bottom_list">
+                                                    <li class="bottom_list-item d-flex align-items-start">
+                                                        <i class="bottom_list-item_marker icon-circle"></i>
+                                                        <p class="bottom_list-item_text">
+                                                            STATE
+                                                        </p>
+                                                    </li>
+                                                    <li class="bottom_list-item d-flex align-items-start">
+                                                        <i class="bottom_list-item_marker icon-circle"></i>
+                                                        <p class="bottom_list-item_text">
+                                                            ICSE
+                                                        </p>
+                                                    </li>
+                                                    <li class="bottom_list-item d-flex align-items-start">
+                                                        <i class="bottom_list-item_marker icon-circle"></i>
+                                                        <p class="bottom_list-item_text">
+                                                            CBSE
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                                <a class="bottom_btn btn btn--bordered btn--arrow" href="course.html">
+                                                    Read more<i class="icon-arrow-right-solid icon"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="popular_list-card course-card col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                                        <div class="course-card_wrapper">
+                                            <div class="top d-flex align-items-start">
+                                                <span class="top_icon top_icon--sky">
+                                                    <i class="icon-sitemap-solid icon"></i>
+                                                </span>
+                                                <div class="wrapper d-flex flex-column">
+                                                    <h5 class="top_title">10th Class</h5>
+                                                    <ul class="rating d-flex align-items-center">
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                    </ul>
+                                                    <span class="top_author"></span>
+                                                    <span class="top_details">1 Year Course</span>
+                                                </div>
+                                            </div>
+                                            <div class="bottom">
+                                                <ul class="bottom_list">
+                                                    <li class="bottom_list-item d-flex align-items-start">
+                                                        <i class="bottom_list-item_marker icon-circle"></i>
+                                                        <p class="bottom_list-item_text">
+                                                            STATE
+                                                        </p>
+                                                    </li>
+                                                    <li class="bottom_list-item d-flex align-items-start">
+                                                        <i class="bottom_list-item_marker icon-circle"></i>
+                                                        <p class="bottom_list-item_text">
+                                                            ICSE
+                                                        </p>
+                                                    </li>
+                                                    <li class="bottom_list-item d-flex align-items-start">
+                                                        <i class="bottom_list-item_marker icon-circle"></i>
+                                                        <p class="bottom_list-item_text">
+                                                            CBSE
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                                <a class="bottom_btn btn btn--bordered btn--arrow" href="course.html">
+                                                    Read more<i class="icon-arrow-right-solid icon"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="popular_list-card course-card col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                                        <div class="course-card_wrapper">
+                                            <div class="top d-flex align-items-start">
+                                                <span class="top_icon top_icon--sky">
+                                                    <i class="icon-sitemap-solid icon"></i>
+                                                </span>
+                                                <div class="wrapper d-flex flex-column">
+                                                    <h5 class="top_title">11th Class / PUC 1st Year</h5>
+                                                    <ul class="rating d-flex align-items-center">
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                    </ul>
+                                                    <span class="top_author"></span>
+                                                    <span class="top_details">1 Year Course</span>
+                                                </div>
+                                            </div>
+                                            <div class="bottom">
+                                                <ul class="bottom_list">
+                                                    <li class="bottom_list-item d-flex align-items-start">
+                                                        <i class="bottom_list-item_marker icon-circle"></i>
+                                                        <p class="bottom_list-item_text">
+                                                           CET
+                                                        </p>
+                                                    </li>
+                                                    <li class="bottom_list-item d-flex align-items-start">
+                                                        <i class="bottom_list-item_marker icon-circle"></i>
+                                                        <p class="bottom_list-item_text">
+                                                        NEET
+                                                        </p>
+                                                    </li>
+                                                    <li class="bottom_list-item d-flex align-items-start">
+                                                        <i class="bottom_list-item_marker icon-circle"></i>
+                                                        <p class="bottom_list-item_text">
+                                                        JEE
+                                                        </p>
+                                                    </li>
+                                                    <li class="bottom_list-item d-flex align-items-start">
+                                                        <i class="bottom_list-item_marker icon-circle"></i>
+                                                        <p class="bottom_list-item_text">
+                                                        Commerce subjects
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                                <a class="bottom_btn btn btn--bordered btn--arrow" href="course.html">
+                                                    Read more <i class="icon-arrow-right-solid icon"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="popular_list-card course-card col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                                        <div class="course-card_wrapper">
+                                            <div class="top d-flex align-items-start">
+                                                <span class="top_icon top_icon--sky">
+                                                    <i class="icon-sitemap-solid icon"></i>
+                                                </span>
+                                                <div class="wrapper d-flex flex-column">
+                                                    <h5 class="top_title">12th Class / PUC 2nd Year</h5>
+                                                    <ul class="rating d-flex align-items-center">
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                    </ul>
+                                                    <span class="top_author"></span>
+                                                    <span class="top_details">1 Year Course</span>
+                                                </div>
+                                            </div>
+                                            <div class="bottom">
+                                                <ul class="bottom_list">
+                                                    <li class="bottom_list-item d-flex align-items-start">
+                                                        <i class="bottom_list-item_marker icon-circle"></i>
+                                                        <p class="bottom_list-item_text">
+                                                           CET
+                                                        </p>
+                                                    </li>
+                                                    <li class="bottom_list-item d-flex align-items-start">
+                                                        <i class="bottom_list-item_marker icon-circle"></i>
+                                                        <p class="bottom_list-item_text">
+                                                        NEET
+                                                        </p>
+                                                    </li>
+                                                    <li class="bottom_list-item d-flex align-items-start">
+                                                        <i class="bottom_list-item_marker icon-circle"></i>
+                                                        <p class="bottom_list-item_text">
+                                                        JEE
+                                                        </p>
+                                                    </li>
+                                                    <li class="bottom_list-item d-flex align-items-start">
+                                                        <i class="bottom_list-item_marker icon-circle"></i>
+                                                        <p class="bottom_list-item_text">
+                                                        Commerce subjects
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                                <a class="bottom_btn btn btn--bordered btn--arrow" href="course.html">
+                                                    Read more <i class="icon-arrow-right-solid icon"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="popular_list-card course-card col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                                        <div class="course-card_wrapper">
+                                            <div class="top d-flex align-items-start">
+                                                <span class="top_icon top_icon--sky">
+                                                    <i class="icon-sitemap-solid icon"></i>
+                                                </span>
+                                                <div class="wrapper d-flex flex-column">
+                                                    <h5 class="top_title">8th to 12th Class</h5>
+                                                    <ul class="rating d-flex align-items-center">
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                        <li class="rating_star">
+                                                            <i class="icon-star icon"></i>
+                                                        </li>
+                                                    </ul>
+                                                    <span class="top_author"></span>
+                                                    <span class="top_details">5 Year Course</span>
+                                                </div>
+                                            </div>
+                                            <div class="bottom">
+                                                <ul class="bottom_list">
+                                                    <li class="bottom_list-item d-flex align-items-start">
+                                                        <i class="bottom_list-item_marker icon-circle"></i>
+                                                        <p class="bottom_list-item_text">
+                                                           Foundations Classes
+                                                        </p>
+                                                    </li>
+                                                    <li class="bottom_list-item d-flex align-items-start">
+                                                        <i class="bottom_list-item_marker icon-circle"></i>
+                                                        <p class="bottom_list-item_text">
+                                                        NEET
+                                                        </p>
+                                                    </li>
+                                                    <li class="bottom_list-item d-flex align-items-start">
+                                                        <i class="bottom_list-item_marker icon-circle"></i>
+                                                        <p class="bottom_list-item_text">
+                                                        JEE
+                                                        </p>
+                                                    </li>
+                                                    <li class="bottom_list-item d-flex align-items-start">
+                                                        <i class="bottom_list-item_marker icon-circle"></i>
+                                                        <p class="bottom_list-item_text">
+                                                           CET
+                                                        </p>
+                                                    </li>
+                                                
+                                                </ul>
+                                                <a class="bottom_btn btn btn--bordered btn--arrow" href="course.html">
+                                                    Read More <i class="icon-arrow-right-solid icon"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a class="popular_btn btn btn--gradient" href="courses.html">
+                                    <span class="text">Learn more</span>
+                                </a>
+                            </div>
+                        </section>
+                        <!-- popular courses section end -->
+            <!-- about section start -->
+            <section class="about">
+                <div class="container">
+                    <div class="about_deco">
+                        <lottie-player
+                            src="lottie/wave.json"
+                            background="transparent"
+                            speed="1"
+                            style="width: 100%; height: 100%"
+                            loop
+                            autoplay
+                        ></lottie-player>
+                    </div>
+                    <div class="about_main">
+                        <div class="content">
+                            <h2 class="about_main-header" data-aos="fade-in">Testimonals</h2>
+                            <ul class="about_main-list">
+                                <li class="about_main-list_item" data-aos="fade-up">
+                                    <i class="icon-check icon"></i>
+                                    <div class="content">
+                                        <h5 class="title">Full Time Faculty</h5>
+                                        <p class="text">Faculities present 24/7 to clear the doubts of the student</p>
+                                    </div>
+                                </li>
+                                <li class="about_main-list_item" data-aos="fade-up" data-aos-delay="50">
+                                    <i class="icon-check icon"></i>
+                                    <div class="content">
+                                        <h5 class="title">Access to education materials such as reference books and model question papers</h5>
+                                        <p class="text">Many study materials along with solutions to question paper</p>
+                                    </div>
+                                </li>
+                                <li class="about_main-list_item" data-aos="fade-up" data-aos-delay="100">
+                                    <i class="icon-check icon"></i>
+                                    <div class="content">
+                                        <h5 class="title">
+                                            After completing the course and completing the tasks, you will gain confidence 
+                                        </h5>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about_review" data-aos="zoom-in">
+                        <div class="about_review-wrapper">
+                            <div class="media">
+                                <picture>
+                                    <source data-srcset="img/Abhisha.png" srcset="img/Abhisha.png" />
+                                    <img class="lazy" data-src="img/Abhisha.png" src="img/Abhisha.png" alt="media" />
+                                </picture>
+                            </div>
+                            <div class="main">
+                                <h5 class="main_name">Mahima Hathwar</h5>
+                                <ul class="rating d-flex align-items-center">
+                                    <li class="rating_star">
+                                        <i class="icon-star icon"></i>
+                                    </li>
+                                    <li class="rating_star">
+                                        <i class="icon-star icon"></i>
+                                    </li>
+                                    <li class="rating_star">
+                                        <i class="icon-star icon"></i>
+                                    </li>
+                                    <li class="rating_star">
+                                        <i class="icon-star icon"></i>
+                                    </li>
+                                    <li class="rating_star">
+                                        <i class="icon-star icon"></i>
+                                    </li>
+                                </ul>
+                                <q class="main_review quote">
+                                    I attended tutions in Innovative study circle for my 10th grade. 
+                                    I was struggling in maths and chemistry before I came here and
+                                     I would like to say that I improved a lot here.
+                                     It is an innovative place which helps you to discover your ability.
+                                </q>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- about section end -->
+
+            <!-- banner section start -->
+            <div class="banner">
+                <div class="underlay"></div>
+                <div class="container d-lg-flex align-items-center">
+                    <div class="banner_content">
+                        <h4 class="banner_content-title" data-aos="fade-up">
+                            Unlimited access to educational materials and lectures for subscribers
+                        </h4>
+                        <div class="wrapper" data-aos="fade-up" data-aos-delay="50">
+                            <a class="banner_content-btn btn btn--yellow" href="pricing.html">See pricing plans</a>
+                        </div>
+                    </div>
+                    <div class="banner_media">
+                        <picture>
+                            <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                            <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <!-- banner section end -->
+        </main>
+        <!-- homepage content end -->
+        <footer class="new_footer_area bg_color">
+            <div class="new_footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                                <p>Don’t miss any updates of our new templates and extensions.!</p>
+                                <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                                    <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                                    <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                                    <p class="mchimp-errmessage" style="display: none;"></p>
+                                    <p class="mchimp-sucmessage" style="display: none;"></p>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Our Branches</h3>
+                                <ul class="list-unstyled f_list">
+                                  <li><a href="Rajajinagar-1st-block.html"> Rajajinagar 1ST Block</a></li>
+                                  <li><a href="Rajajinagar-4TH-block.html"> Rajajinagar 4TH Block</a></li>
+                                  <li><a href="Malleshwaram.html"> Malleshwaram</a></li>
+                                  <li><a href="Basaveshwara-nagara.html"> Basaveshwara nagar</a></li>
+                                  <li><a href="Rajajinagar-PUC-Branch.html"> Rajajinagar PUC Branch</a></li>
+                                  <li><a href="nagarbhavi-branch.html"> Nagarbhavi Branch</a></li>
+                                  
+                                  </ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                                <ul class="list-unstyled f_list">
+                                  <li><a href="about.html">  About Us</a></li>
+                                  <li><a href="contacts.html"> Contact Us</a></li>
+                                  <li><a href="gallery.html"> Gallery</a></li>
+                                  <li><a href="milestones.html"> Success Stories</a></li>
+                                  <li><a href="testimonals.html"> Testimonial</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Connect with Us</h3>
+                                <div class="f_social_icon">
+                                    <a href="https://www.facebook.com/Innovative-Study-Circle-R-103625069696186" class="fab fa-facebook"></a>
+                                    <a href="https://twitter.com/iscgurublr?s=08" class="fab fa-twitter"></a>
+                                    <a href="https://www.youtube.com/channel/UCqGsxCbleWlJHbu0Rk_jH1A" class="fab fa-youtube"></a>
+                                    <a href="https://www.instagram.com/isc.guru/" class="fab fa-instagram"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bg">
+                    <div class="footer_bg_one"></div>
+                    <div class="footer_bg_two"></div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-sm-7">
+                            <p class="mb-0 f_400">© Developed By Team Vikasana All rights reserved.</p>
+                        </div>
+                        <!-- <div class="col-lg-6 col-sm-5 text-right">
+                            <p>Coded by<i class="icon_heart"></i> <a href="http://cakecounter.com" target="_blank">Sukarna and Pavan</a></p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+          </footer>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script src="js/common.min.js"></script>
+    </body>
+</html>
